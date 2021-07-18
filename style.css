@@ -1,6 +1,6 @@
 .img-styles:not(:last-child) {
   margin-right: 30px;
-  display: inline-block;
+  display: block;
 }
 
 .list-style {
@@ -11,13 +11,8 @@
 
 .cute {
   display: inline-flex;
-  border: 8px solid pink;
 }
 
 .cute:not(:last-child) {
   margin-right: 30px;
-}
-
-.round {
-  border-radius: 50%;
 }
