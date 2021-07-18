@@ -16,7 +16,7 @@ const images = [
 const galleryEl = document.querySelector('ul#gallery');
 
 const makeElementOfGallery = ({ url, alt }) => {
-    return `<li class="list-style cute"><img class="round" src="${url}" alt="${alt}" width="350" height="300"></li>`;
+    return `<li class="list-style gallery"><img class="round" src="${url}" alt="${alt}" width="350" height="300"></li>`;
 };
 
 const makeGallerymarkup = images.map(makeElementOfGallery).join('');

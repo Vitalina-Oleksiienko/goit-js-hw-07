@@ -9,10 +9,10 @@
   margin: 0;
 }
 
-.cute {
+.gallery {
   display: block;
 }
 
-.cute:not(:last-child) {
+.gallery:not(:last-child) {
   margin-bottom: 30px;
 }
