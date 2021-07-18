@@ -13,7 +13,11 @@ const images = [
   },
 ];
 
-const makeGalleryEl = (image) => `<li class="grid__items"><img class="gallery__img" src="${image.url}" alt="${image.alt}"></li>`;
-const makeAllGalleryEl = images.map(makeGalleryEl).join('');
-const insertListEl = document.querySelector('ul#gallery');
-insertListEl.insertAdjacentHTML('afterbegin', makeAllGalleryEl)
+const galleryEl = document.querySelector('ul#gallery');
+
+const makeElementOfGallery = ({ url, alt }) => {
+    return `<li class="list-style cute"><img class="round" src="${url}" alt="${alt}" width="350" height="300"></li>`;
+};
+
+const makeGallerymarkup = images.map(makeElementOfGallery).join('');
+galleryEl.insertAdjacentHTML('afterbegin', makeGallerymarkup);
