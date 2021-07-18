@@ -10,7 +10,7 @@
 }
 
 .cute {
-  display: inline-flex;
+  display: block;
 }
 
 .cute:not(:last-child) {
